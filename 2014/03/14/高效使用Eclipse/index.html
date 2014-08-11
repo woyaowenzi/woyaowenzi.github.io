@@ -1,0 +1,340 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>高效使用Eclipse | WOYAOWENZI&#39;s blog</title>
+  <meta name="author" content="LiuLin">
+  
+  <meta name="description" content="工欲善其事，必先利其器
+作为一个Android程序员，Eclipse应该是你第一个上手的IDE，当然你也可以选择传说中的神器：Android Studio 或 IntelliJ IDEA。这里暂时不讨论Eclipse和这些新晋升的神器的区别（传送门：Android Studio比Eclipse好用在哪里？），我们单纯的只从Eclipse出发，如何提高我们的工作效率。">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="高效使用Eclipse"/>
+  <meta property="og:site_name" content="WOYAOWENZI&#39;s blog"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <!-- <link href="/favicon.png" rel="icon"> -->
+  <!-- <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> -->
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+  <link rel="alternate" href="/atom.xml" title="WOYAOWENZI&#39;s blog" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">WOYAOWENZI&#39;s blog</a></h1>
+  <h2><a href="/">玉不琢，不成器。人不俗，没有趣！</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/archives">存档</a></li>
+    
+      <li><a href="/">关于</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-03-14T15:41:56.000Z"><a href="/2014/03/14/高效使用Eclipse/">3月 14 2014</a></time>
+      
+      
+  
+    <h1 class="title">高效使用Eclipse</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h1 id="工欲善其事，必先利其器">工欲善其事，必先利其器</h1>
+<p>作为一个Android程序员，Eclipse应该是你第一个上手的IDE，当然你也可以选择传说中的神器：<strong><code>Android Studio</code></strong> 或 <strong><code>IntelliJ IDEA</code></strong>。这里暂时不讨论Eclipse和这些新晋升的神器的区别（传送门：<a href="http://www.zhihu.com/question/21534929" target="_blank" rel="external">Android Studio比Eclipse好用在哪里？</a>），我们单纯的只从Eclipse出发，如何提高我们的工作效率。<br><a id="more"></a></p>
+<h2 id="设置你的File_Encoding">设置你的File Encoding</h2>
+<p>对于很多童鞋来说，没有设置<code>File Encoding</code>的习惯，而其注释里面经常是中文注释，为了我们的注释能够在别人的机器正常显示，防止乱码滋生，请修改文本编码方式为 UTF-8。<br><strong>如何设置</strong>：Window → Preferences → General → Workspace → Text file encoding，设置成 <strong>UTF-8</strong></p>
+<h2 id="字体选择">字体选择</h2>
+<p>每一位程序员都有一套自己喜爱的编程字体，对于在感官上追求完美的人来说，一套好字体，通常能最小限度的分散你编程的注意力。通常，Eclipse默认字体是 <strong><code>Courier New</code></strong>，10号字体，看起来显示得还不错，不过，我们有更好的字体可供选择，无论是显示英文还是中文，都比较完美，即 <strong><code>Consolas</code></strong>，字号为11。<br><strong>如何设置</strong>：Window → Preferences → General → Appearence Colors And Fonts，在右边的对话框里选择Java - Java Editor Text Font，设置编程字体，当然，对话框之类的字体也是可以在此设置的。<br><strong><em>更多完美的编程字体请查看</em></strong>：<a href="http://www.iteye.com/news/11102-10-great-programming-font" target="_blank" rel="external">10个效果最佳的编程字体</a><br>最后，再推荐一款由Adobe公司开源出来的等宽字体：<a href="http://www.iplaysoft.com/source-code-pro-font.html" target="_blank" rel="external">Source Code Pro</a>，非常之漂亮。<br><img src="/image/eclipse/source-code-pro.png" alt="Source Code Pro"></p>
+<h2 id="Theme">Theme</h2>
+<p>如果你厌倦了改来改去调整字体、文本配色等繁琐的事情，我们还有统一的解决方案，就是<strong><code>Eclipse Color Theme</code></strong>插件，它能提供给你很多非常漂亮的主题，如Sublime Text 2、Obsidian、Notepad++ Like等几十个主题，足以适应各类人群的需求，它就是强大的：<a href="http://eclipsecolorthemes.org/" target="_blank" rel="external">Eclipse Color Themes</a><br><strong>如何安装</strong>：<br>Step 1：安装<code>Marketplace</code>：<a href="http://download.eclipse.org/mpc/indigo/" target="_blank" rel="external">http://download.eclipse.org/mpc/indigo/</a><br>Step 2：通过<code>Marketplace</code>安装该插件<br>当然，你也可以直接通过在Eclipse中，点击 Help → Install New Software 来安装这个插件，详情请Google之。<br><img src="/image/eclipse/eclipse-color-themes.jpg" alt="Eclipse Color Themes"></p>
+<h2 id="智能感知">智能感知</h2>
+<h3 id="JAVA">JAVA</h3>
+<p>智能感知无疑是加速编程最直接的方式。默认情况下，我们编写JAVA程序时，只有遇到英文句号<code>.</code>时，或者手动按<code>Alt+/</code>，Eclipse才会将代码提示显示出来，极不方便，如何在输入任意字符时，让智能提示框显示出来呢？<br><strong>如何设置</strong>：Window → Preferences → Java → Editor → Content Assist，设置Auto activation triggers for java为：<br><code>.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW_(</code>，另外，为了加速智能提示框触发时间，我们将Auto activation delay (ms)设置成<code>20</code><br>设置后效果图：<br><img src="/image/eclipse/eclipse-java-intellisense.png" alt="JAVA智能感知"></p>
+<h3 id="XML">XML</h3>
+<p>对于Android程序员来说，经常要写XML布局文件，但有件很头疼的事情，就是XML里面没有智能感之，只有在出现<code>&lt;=:</code>时，才会有智能提示框，如何解决？<br>其实解决办法如同设置JAVA的智能感知一样。<br><strong>如何设置</strong>：Window → Preferences → XML → XML files → Editor → Content Assist → Auto Activation，设置Prompt when thiese characters are inserted：<code>.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_(&lt;=:</code>，并将Auto activation delay (ms)设置成<code>20</code><br>设置后效果图：<br><img src="/image/eclipse/eclipse-xml-intellisense.png" alt="XML智能感知"></p>
+<h2 id="#与@">#与@</h2>
+<p>大部分懒人与不喜欢写注释的人，都会抱怨注释难写，太容易分散精力，作为一个程序员，如果连注释都懒得写的话，我个人认为这是个极不负责的程序员，因为软件的软件的生命期80%都是花费在维护上，不写注释的后果是比较严重的，它极大的提高的软件维护的难度，额…写个注释真的很难写吗？至于如何写出专业的注释，我不做过多的解释，只是提供两个简单的技巧。<br>在代码中添加注释的技巧：使用<code>@#</code>激活<code>JavaDoc</code><br><strong>@：添加文档中的关键字</strong></p>
+<figure class="highlight java```"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="javadoc">/**
+ * 该类是整个 DEMO 程序的入口。
+ * 
+ *<span class="javadoctag"> @author</span> XXX
+ *<span class="javadoctag"> @date</span> 2013-09-29
+ */</span>
+<span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DemoMainActivity</span> <span class="keyword">extends</span> <span class="title">Activity</span> {</span>
+</pre></td></tr></table></figure>
+
+<p><img src="/image/eclipse/javadoc-keyword-link.png" alt="JavaDoc-@"><br><strong>#：添加代码链接</strong></p>
+<p><figure class="highlight java```"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre><span class="javadoc">/**
+ * Calls {@link android.view.Window#getCurrentFocus} on the
+ * Window of this Activity to return the currently focused view.
+ * 
+ *<span class="javadoctag"> @return</span> View The current View with focus or null.
+ * 
+ *<span class="javadoctag"> @see</span> #getWindow
+ *<span class="javadoctag"> @see</span> android.view.Window#getCurrentFocus
+ */</span>
+<span class="keyword">public</span> View <span class="title">getCurrentFocus</span>() {
+    <span class="keyword">return</span> mWindow != <span class="keyword">null</span> ? mWindow.getCurrentFocus() : <span class="keyword">null</span>;
+}
+</pre></td></tr></table></figure><br><img src="/image/eclipse/javadoc-code-link.png" alt="JavaDoc-#"></p>
+<h2 id="快捷键">快捷键</h2>
+<p>快捷键的重要性就不必多说了，为了加速编码、阅读代码的效率，我认为每个人都应该掌握下面常用的快捷键。如果你忘记了快捷键，可通过<code>Ctrl-Shift-L</code>打开快捷键窗口查看。<br><img src="/image/eclipse/eclipse-shortcut.png" alt="XML智能感知"><br><a href="http://www.cnblogs.com/yanyansha/archive/2011/08/30/2159265.html" target="_blank" rel="external">研读代码必须掌握的Eclipse快捷键</a><br><a href="http://www.open-open.com/bbs/view/1320934157953" target="_blank" rel="external">Eclipse快捷键 10个最有用的快捷键</a></p>
+<h2 id="集成SVN与Beyond_Compare">集成SVN与Beyond Compare</h2>
+<p>将SVN集成到Eclipse是一个很好的方式，可以让我们不用从Windows文件夹中切来去。早期的时候，我一直不太信任这个SVN插件，原因在于感觉直接使用<code>TortoiseSVN + Beyond Compare</code>会更加爽一些，SVN插件自带的比较工具太差了，比较起代码来极度不爽。</p>
+<h3 id="SVN插件的选择">SVN插件的选择</h3>
+<p>目前市面上有两个很好的插件：</p>
+<ul>
+<li>Subversion（Eclipse团队官方出品）</li>
+<li>Subclipse（SVN团队官方出品）</li>
+</ul>
+<p>它们的之间的优劣可以看看这篇文章：<a href="https://www.akii.org/eclipse-svn-plugins-subclipse-vs-subversive.html" target="_blank" rel="external">Subclipse vs Subversive</a></p>
+<p>我选择是<code>Subversion</code>，原因在于它和<code>Beyond Compare 3</code>配置起来更加简单，<code>Subclipse</code>我配置了很长时间，未果。<br><strong>如何安装Subversion插件</strong>：</p>
+<ul>
+<li>直接从Eclipse的<code>Marketplace</code>上安装</li>
+<li>通过<code>Help → Install New Software</code>安装该插件<br><a href="http://community.polarion.com/projects/subversive/download/eclipse/3.0/juno-site/" target="_blank" rel="external">http://community.polarion.com/projects/subversive/download/eclipse/3.0/juno-site/</a></li>
+</ul>
+<p>另外，使用Subversion时，在选择<code>SVN Connector</code>时，选择<code>JavaHL</code>（请注意版本的选择）</p>
+<h3 id="在SVN中配置Beyond_Compare_3">在SVN中配置Beyond Compare 3</h3>
+<p>如果你习惯了BeyondCompare比较文件的风格，再去使用SVN原生的比较风格，你会觉得痛苦无比，因此，我们有必要让BeyondCompare能够配置到SVN插件里面去。<br><img src="/image/eclipse/beyond-compare.png" alt="Beyond Compare比较文件"></p>
+<p><strong>如何配置</strong>：<br>Step 1：Window → Preferences → Team → SVN → Diff Viewer<br>Step 2：点击<code>Add</code>，设置文件类型为任意文件，即在<code>Extension or mime-type</code>中添加<code>*</code><br>Step 3：选择Beyond Compare的文件路径（请注意将路径加上双引号），<br>在Diff中设置参数：<code>&quot;${base}&quot; &quot;${mine}&quot;</code><br>在Merge中设置参数：<br><code>&quot;${theirs}&quot; &quot;${mine}&quot; &quot;${base}&quot; &quot;${merged}&quot;  
+/lefttitle=&quot;Incoming (${theirs})&quot;  
+/centertitle=&quot;Base (${base})&quot;  
+/righttitle=&quot;Local (${mine})&quot;  
+/outputtitle=&quot;Merged (${merged})&quot;</code><br>如图所示：<br><img src="/image/eclipse/svn-beyondcompare-integration.png" alt="Beyond Compareg与SVN插件整合"></p>
+<h2 id="Java_Code_Style各种配置">Java Code Style各种配置</h2>
+<p>Java Code Style的各种配置，主要是指配置我们代码的编码规范，如换行，空格，注释等。<br>可以在Window → Preferences → Java → Code Style 下，对<code>Clean Up</code>，<code>Code Templates</code>，<code>Formatter</code>进行配置，一般情况下，一个团队，为了统一编码风格，我们需要有一些统一风格模板，以下三个链接是目前我做的一个模板，仅供参考。</p>
+<ul>
+<li><a href="/resource/codestyle/CodeStyle-CleanUp.xml">Clean Up</a></li>
+<li><a href="/resource/codestyle/CodeStyle-CodeTemplates.xml">Code Template</a></li>
+<li><a href="/resource/codestyle/CodeStyle-Formatter.xml">Formatter</a></li>
+</ul>
+<p><strong>如何使用</strong>：保存上面的三个文件，以<strong>Formatter</strong>举例，在<code>Formatter</code>界面，点击<code>Import</code>导入即可，其它两个类似。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/Eclipse/">Eclipse</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/Android/">Android</a>, <a href="/tags/Eclipse，效率/">Eclipse，效率</a>, <a href="/tags/tools/">tools</a>
+  </div>
+
+        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_sdo" data-cmd="sdo" title="分享到麦库记事"></a><a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"32"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">Comments</h1>
+<!-- 
+  
+      <div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=123456789012345";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="fb-comments" data-href="http://yoursite.com/2014/03/14/高效使用Eclipse/" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
+      
+  
+ -->
+
+  <!-- Duoshuo Comment BEGIN -->
+  <div class="ds-thread"></div>
+  <script type="text/javascript">
+  var duoshuoQuery = {short_name:"woyaowenzi"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = 'http://static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0] 
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+  <!-- Duoshuo Comment END -->
+
+</section>
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:yoursite.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">Categories</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/Android/">Android</a><small>1</small></li>
+  
+    <li><a href="/categories/Android/iOS/Windows/Linux/C++/">C++</a><small>1</small></li>
+  
+    <li><a href="/categories/Eclipse/">Eclipse</a><small>3</small></li>
+  
+    <li><a href="/categories/Android/iOS/Windows/Linux/C++/JAVA/">JAVA</a><small>1</small></li>
+  
+    <li><a href="/categories/Android/iOS/Windows/Linux/">Linux</a><small>1</small></li>
+  
+    <li><a href="/categories/MacOS/">MacOS</a><small>1</small></li>
+  
+    <li><a href="/categories/SublimeText/">SublimeText</a><small>1</small></li>
+  
+    <li><a href="/categories/Android/iOS/Windows/">Windows</a><small>1</small></li>
+  
+    <li><a href="/categories/Android/iOS/">iOS</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">Tags</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/Android/">Android</a><small>3</small></li>
+  
+    <li><a href="/tags/Eclipse，效率/">Eclipse，效率</a><small>3</small></li>
+  
+    <li><a href="/tags/Network/">Network</a><small>1</small></li>
+  
+    <li><a href="/tags/SublimeText，效率/">SublimeText，效率</a><small>1</small></li>
+  
+    <li><a href="/tags/Tools/">Tools</a><small>1</small></li>
+  
+    <li><a href="/tags/URI-Scheme/">URI Scheme</a><small>1</small></li>
+  
+    <li><a href="/tags/VIM，效率/">VIM，效率</a><small>1</small></li>
+  
+    <li><a href="/tags/iOS/">iOS</a><small>1</small></li>
+  
+    <li><a href="/tags/tools/">tools</a><small>4</small></li>
+  
+  </ul>
+</div>
+
+
+  <div class="widget tag">
+	<h3 class="title">友情链接</h3>
+	<ul class="entry">
+		<li>
+			<a href="http://zipperary.com/" title="Zippera's Blog">Zippera</a>
+		</li>
+		<li>
+			<a href="http://blog.csdn.net/leehong2005" title="leehong2005's Blog">leehong2005</a>
+		</li>
+		<li>
+			<a href="http://blog.csdn.net/woyaowenzi" title="woyaowenzi's Blog">woyaowenzi</a>
+		</li>
+		<li>
+			<a href="http://www.hongtaozhy.com/" title="hongtaozhy's Blog">hongtaozhy</a>
+		</li>
+		<li>
+			<a href="http://huangliangjie.gitcafe.com/" title="huangliangjie's Blog">huangliangjie</a>
+		</li>
+	</ul>
+</div>
+
+  <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=1&ptype=1&speed=300&skin=5&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=1701266941&verifier=5c8d84f7&dpc=1"></iframe>
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2014 LiuLin
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>
