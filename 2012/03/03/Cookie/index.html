@@ -3,19 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>URI Scheme | WOYAOWENZI&#39;s blog</title>
+  <title>Cookie | WOYAOWENZI&#39;s blog</title>
   <meta name="author" content="LiuLin">
   
-  <meta name="description" content="什么是URI Scheme?
-一般情况下，遇到这种概念不清的问题，最好的第一手资料就是wiki，实在看不懂，再看百度百科，但前者给出的资料一般都是更加准确一些。以下为维基百科和百度百科关于这个问题的连接：
-
-URI Scheme
-URI">
+  <meta name="description" content="1. 什么是cookie?
+什么是Cookie?
+Cookie是存在内存中或硬盘中的一些数据，用来和服务器打交道。http://en.wikipedia.org/wiki/HTTP_cookiehttp://zh.wikipedia.org/wiki/Cookiehttp://baike.baidu.com/view/835.htm">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="URI Scheme"/>
+  <meta property="og:title" content="Cookie"/>
   <meta property="og:site_name" content="WOYAOWENZI&#39;s blog"/>
 
   
@@ -69,67 +67,41 @@ URI">
     <header>
       
         <div class="icon"></div>
-        <time datetime="2014-01-02T16:13:29.000Z"><a href="/2014/01/03/URI Scheme/">1月 3 2014</a></time>
+        <time datetime="2012-03-03T07:20:56.000Z"><a href="/2012/03/03/Cookie/">3月 3 2012</a></time>
       
       
   
-    <h1 class="title">URI Scheme</h1>
+    <h1 class="title">Cookie</h1>
   
 
     </header>
     <div class="entry">
       
-        <h3 id="什么是URI_Scheme?">什么是URI Scheme?</h3>
-<p>一般情况下，遇到这种概念不清的问题，最好的第一手资料就是wiki，实在看不懂，再看百度百科，但前者给出的资料一般都是更加准确一些。<br>以下为维基百科和百度百科关于这个问题的连接：</p>
+        <h2 id="1-_什么是cookie?">1. 什么是cookie?</h2>
+<h3 id="什么是Cookie?">什么是Cookie?</h3>
+<p>Cookie是存在内存中或硬盘中的一些数据，用来和服务器打交道。<br><a href="http://en.wikipedia.org/wiki/HTTP_cookie" target="_blank" rel="external">http://en.wikipedia.org/wiki/HTTP_cookie</a><br><a href="http://zh.wikipedia.org/wiki/Cookie" target="_blank" rel="external">http://zh.wikipedia.org/wiki/Cookie</a><br><a href="http://baike.baidu.com/view/835.htm" target="_blank" rel="external">http://baike.baidu.com/view/835.htm</a><br><a id="more"></a></p>
+<h3 id="用途">用途</h3>
 <ul>
-<li><a href="http://en.wikipedia.org/wiki/URI_scheme" target="_blank" rel="external">URI Scheme</a></li>
-<li><a href="http://baike.baidu.com/view/160675.htm" target="_blank" rel="external">URI</a></li>
+<li>记录用户登录信息（authentication），下次访问时可以不需要输入自己的用户名、密码</li>
+<li>记录用户喜好，使网站个人化，如某个用户在CNN 网站，不想查看任何商务新闻，用户可以将之设置，下次访问时就不会再出现商务新闻。</li>
+<li>网上购物，比如购买N种物品和统一结账时，从cookies中提取购买列表。</li>
 </ul>
-<a id="more"></a>
-
-<p>从维基百科上的定义我们得知，URI Scheme 是统一资源标识符（Uniform Resource Identifier ）的命名结构，说白了，就是定义一个资源的(暂且我们先认为 URI Scheme 与 URI 的概念是一样的）。但是，这个资源是一个宽泛的概念，并不一定是我们所说的 web 资源，它可以是你本机的一个文件，也可以是网络上的视频，等等。因此，我们有必要从一些常规的误区分辨出来，以加深我们的理解：</p>
-<ul>
-<li><p><strong>认为 URI 就是 URL</strong>。<br>实际上，从其名称上来看，URI（Uniform Resource Identifier）和 URL（Uniform Resource Locator）两者名称都不一样，所以必然有区别，前者是统一资源标识符，后者是统一资源定位符，后者是网络上用于定位互联网上Web资源的，如 HTML 文档、图像、视频片段、程序等。</p>
-</li>
-<li><p><strong>它是一个通用定义</strong>，不是 “protocols”，也不是 URI protocols 或者 URL protocols。</p>
-</li>
-<li><strong>它经常用于设计特殊的协议。</strong>如http scheme（HTTP协议），XML namespaces，文件标示等等。从上面的一些结论来看，URI Scheme实际上一个概念性的东西，是一个规范，所以符合它的规范的都可以称之为 URI Scheme，当然，我们也可以设计我们自己的 scheme，用来实现我们特殊的目的。</li>
-</ul>
-<p>它一般具有如下的形式：</p>
+<h3 id="存放位置">存放位置</h3>
+<p><strong>Chrome for windows：</strong> C:\Users\UserName\AppData\Local\Google\Chrome\UserData\Default\Cookies文件，该文件是SqliteDB文件<br><strong>IE：</strong> %appdata%\Microsoft\Windows\Cookies，该文件夹被隐藏，通过命令行可以看到<br><strong>Android中webbrowser：</strong> Android中为安全的考虑，每个应用程序都会有独立的cookie，各个应用程序不能共享cookie</p>
+<h2 id="2-_原理">2. 原理</h2>
+<p>比如说我们访问某个网站：<a href="http://www.example.org/index.html" target="_blank" rel="external">http://www.example.org/index.html</a><br>首先，浏览器第一次通过HTTP访问该网站。该网站收到请求后，通过Set-Cookie返回给browser，然后，browser在进行第二次访问时，将这些cookie顺便带过去，提供一些必要的信息。<br><img src="/image/cookie/cookie-request-response.png" alt="cookie-request-response"></p>
+<h2 id="3-_Android中如何保存session_cookies?">3. Android中如何保存session cookies?</h2>
+<p>在Android中，Session cookie的特点是当关闭掉web browser，该cookies就会被清除掉。<br>所以，如果你想通过cookies保存用户登陆信息，做到在一段时间内不需要二次登陆，就需要自己保存好cookies，然后下次登陆时再设置一遍就可以了。<br><strong>解决办法：</strong>在第一次login后，保存login cookie到share preference，下次登陆，先要remove掉过期的session cookies，然后再重新设置登陆cookies.</p>
+<h3 id="1-_save">1. save</h3>
 <figure class="highlight java"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>&lt;scheme name&gt; : &lt;hierarchical part&gt; [ ? &lt;query&gt; ] [ # &lt;fragment&gt; ]
-</pre></td></tr></table></figure><br>举几个常见的例子：<br><figure class="highlight java"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>String loginCookies = CookieManager.getInstance().getCookie(NetworkConstant.SERVER_URL);
+</pre></td></tr></table></figure>
+
+<h3 id="2-_re-set">2. re-set</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre>1
 2
-3
-4
-5
-</pre></td><td class="code"><pre>http:<span class="comment">//write.blog.csdn.net/postedit/7313543,  </span>
-file:<span class="comment">///c:/WINDOWS/clock.avi</span>
-git:<span class="comment">//github.com/user/project-name.git</span>
-ftp:<span class="comment">//user1:1234@地址</span>
-ed2k:<span class="comment">//|file|%5BMAC%E7%89%88%E6%9E%81%E5%93%81%E9%A3%9E%E8%BD%A69%EF%BC%9A%E6%9C%80%E9%AB%98%E9%80%9A%E7%BC%89%5D.%5BMACGAME%5DNeed.For.Speed.Most.Wanted.dmg|4096933888|2c55f0ad2cb7f6b296db94090b63e88e|h=ltcxuvnp24ufx25h2x7ugfaxfchjkwxa|/</span>
-</pre></td></tr></table></figure><br>这些都是一个URI Scheme。<br>其中：<br><code>&lt;scheme name&gt;</code>：很明显，这是scheme的名称，对于上面五个scheme，它们scheme名分别是http, file, git, ftp, ed2k（电驴协议），实际上，它们也代表着协议名称。<br><code>&lt;hierarchical part&gt;</code>：实际上，一般情况，它包含 authority 和 path。<br><code>&lt;query&gt;</code>：可选项目，一般使用；隔开或&amp;隔开的键值对<code>&lt;key&gt;=&lt;value&gt;</code><br><code>&lt;fragmentg&gt;</code> ：可选项目包，其它额外的标识信息<br><br>从wiki上抄来一个更加具体的例子可能更好的说明问题，假设有如下两个URI Scheme，<br>foo://username:password@example.com:8042/over/there/index.dtb?type=animal&amp;name=narwhal#nose<br>urn:example:animal:ferret:nose<br>它们的分析结果如下：<br><br>如果你看懂了这个图，你肯定也明白URI Scheme到底是什么玩意了。<br><img src="/image/uri/uri-scheme.png" alt="URI Scheme"><br><br>—-<br><br>在android开发中，我们可能会需要分析webbrowser上web页面的一些特定URI Scheme，比如说点击网页上某个下载按钮，该按钮被点击后发出一个scheme，内里包含了需要下载的文件信息。我们监听这个点击事件，获取并分析URI Scheme，然后去下载对应的文件。实际上，就是要分析一些链接，然后再操作，那如何获取路径这个scheme？<br>假设我们的scheme是电驴协议的URI，如：<br><code>ed2k://|file|%5BMAC%E7%89%88%E6%9E%81%E5%93%81%E9%A3%9E%E8%BD%A69%EF%BC%9A%E6%9C%80%E9%AB%98%E9%80%9A%E7%BC%89%5D.%5BMAC-GAME%5DNeed.For.Speed.Most.Wanted.dmg|4096933888|2c55f0ad2cb7f6b296db94090b63e88e|h=ltcxuvnp24ufx25h2x7ugfaxfchjkwxa|/</code><br>我们需要做的事就是通过webview重写<code>shouldOverrideUrlLoading</code>这个方法，获取指定的URI Scheme，并解析它，最后下载对应文件。<br>该函数的作用是：在新的页面进行跳转前，给应用程序一次接管新的url的机会，当应用程序处理了该url，返回true，如果想让当然的webview自行处理，返回false.<br>以下是一个简单的代码片段。<br><figure class="highlight java"><table><tr><td class="gutter"><pre>1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-</pre></td><td class="code"><pre>webview.setWebViewClient(<span class="keyword">new</span> WebViewClient() {  
-    <span class="annotation">@Override</span>  
-    <span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">shouldOverrideUrlLoading</span>(WebView wv, String url) {
-        <span class="keyword">if</span> (<span class="keyword">null</span> != url && url.startsWith(<span class="string">"ed2k:"</span>)) {  
-            <span class="comment">// Parse the url and download file async...  </span>
-            <span class="keyword">return</span> <span class="keyword">true</span>;  
-        } <span class="keyword">else</span> {  
-            <span class="keyword">return</span> <span class="keyword">super</span>.shouldOverrideUrlLoading(wv, url);  
-        }  
-    }  
-});
+</pre></td><td class="code"><pre>CookieManager.getInstance().removeSessionCookie();            
+CookieManager.getInstance().setCookie(url, loginCookies);
 </pre></td></tr></table></figure>
 
 
@@ -141,7 +113,7 @@ ed2k:<span class="comment">//|file|%5BMAC%E7%89%88%E6%9E%81%E5%93%81%E9%A3%9E%E8
         
   
   <div class="tags">
-    <a href="/tags/Network/">Network</a>, <a href="/tags/URI-Scheme/">URI Scheme</a>
+    <a href="/tags/Android/">Android</a>, <a href="/tags/Cookie/">Cookie</a>
   </div>
 
         <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_sdo" data-cmd="sdo" title="分享到麦库记事"></a><a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a></div>
@@ -168,7 +140,7 @@ ed2k:<span class="comment">//|file|%5BMAC%E7%89%88%E6%9E%81%E5%93%81%E9%A3%9E%E8
   }(document, 'script', 'facebook-jssdk'));
 </script>
 
-<div class="fb-comments" data-href="http://yoursite.com/2014/01/03/URI Scheme/" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
+<div class="fb-comments" data-href="http://yoursite.com/2012/03/03/Cookie/" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
       
   
  -->
